@@ -31,8 +31,8 @@ public class SendMailExample {
 		System.out.println("Creating message...");
 		MimeMessage msg = new MimeMessage(session);
 
-		final String from = "tellastory73@gmail.com";
-		final String to = "tellastory73@gmail.com";
+		final String from = "enternamehere@gmail.com";
+		final String to = "enternamehere@gmail.com";
 
 		try {
 			msg.setFrom(from);
