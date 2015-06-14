@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="org.ustok.rcpmail.ui.toolbar"
+               label="Mail">
+            <command
+                  commandId="org.ustok.rcpmail.ui.command.sendfeedback"
+                  icon="icons/user_comment.png"
+                  label="Send Feedback"
+                  style="push"
+                  tooltip="Send Feedback">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.ustok.rcpmail.internal.ui.handler.SendFeedbackHandler"
+            description="Send feedback"
+            id="org.ustok.rcpmail.ui.command.sendfeedback"
+            name="Send Feedback">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.ustok.rcpmail.internal.ui.handler.SendFeedbackHandler"
+            commandId="org.ustok.rcpmail.ui.command.sendfeedback">
+      </handler>
+   </extension>
+
+</plugin>

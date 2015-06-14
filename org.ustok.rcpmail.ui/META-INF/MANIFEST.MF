@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: RCP Mail UI
-Bundle-SymbolicName: org.ustok.rcpmail.ui
+Bundle-SymbolicName: org.ustok.rcpmail.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.ustok.rcpmail.ui.RCPMailUIActivator
 Bundle-Vendor: Ustok.org
